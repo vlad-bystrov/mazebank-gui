@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.mazebank.controllers.client.ClientMenuController"
+      prefWidth="180" prefHeight="750"
+      stylesheets="/styles/client-menu.css">
+
+    <AnchorPane prefWidth="160" prefHeight="730">
+        <VBox prefWidth="160" prefHeight="80"
+              styleClass="title_container"
+              AnchorPane.leftAnchor="0"
+              AnchorPane.topAnchor="0"
+              AnchorPane.rightAnchor="0">
+
+            <FontAwesomeIconView size="30" glyphName="BANK" />
+            <Text text="Maze Bank" />
+        </VBox>
+
+        <VBox prefWidth="160" prefHeight="400"
+              AnchorPane.topAnchor="100"
+              AnchorPane.leftAnchor="0"
+              AnchorPane.rightAnchor="0"
+              styleClass="menu_container">
+
+            <Button fx:id="dashboardBtn" text="Dashboard" />
+            <Button fx:id="transactionsBtn" text="Transactions" />
+            <Button fx:id="accountsBtn" text="Accounts" />
+
+            <Separator />
+
+            <Button fx:id="profileBtn" text="Profile" />
+            <Button fx:id="logoutBtn" text="Logout" />
+        </VBox>
+    </AnchorPane>
+
+</VBox>

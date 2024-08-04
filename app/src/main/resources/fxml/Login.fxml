@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.text.Text?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.mazebank.controllers.LoginController"
+            prefHeight="400.0" prefWidth="600.0"
+            stylesheets="/styles/login.css"
+            styleClass="login_container">
+
+    <VBox prefHeight="400" prefWidth="200"
+          styleClass="login_logo_container"
+          AnchorPane.topAnchor="0"
+          AnchorPane.leftAnchor="0"
+          AnchorPane.bottomAnchor="0">
+
+        <FontAwesomeIconView size="30" glyphName="BANK" />
+        <Text text="Maze Bank" />
+    </VBox>
+
+    <VBox prefWidth="350" prefHeight="350"
+          styleClass="login_form_container"
+          AnchorPane.topAnchor="20"
+          AnchorPane.rightAnchor="20">
+
+        <Label id="choice-prompt-text" text="Choose your account:" />
+        <ChoiceBox fx:id="accountSelectorCb" styleClass="account_selector" />
+
+        <Label fx:id="payeeAddressLbl" text="Payee address:" />
+        <TextField fx:id="payeeAddressField" styleClass="input_field" />
+
+        <Label text="Password:" />
+        <PasswordField fx:id="passwordField" styleClass="input_field" />
+
+        <Button fx:id="loginBtn" text="Login" />
+
+        <Label fx:id="errorLbl" text="Error:" styleClass="error-label" />
+    </VBox>
+
+</AnchorPane>

@@ -1,0 +1,20 @@
+[versions]
+logback = "1.5.6"
+tornadofx = "1.7.20"
+coroutines-javafx = "1.8.1"
+fontawesomefx = "4.7.0-9.1.2"
+sqlite-jdbc = "3.46.0.1"
+
+[libraries]
+logback = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
+tornadofx = { module = "no.tornado:tornadofx", version.ref = "tornadofx" }
+coroutines-javafx = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-javafx", version.ref = "coroutines-javafx" }
+fontawesomefx = { module = "de.jensd:fontawesomefx-fontawesome", version.ref = "fontawesomefx" }
+sqlite-jdbc = { module = "org.xerial:sqlite-jdbc", version.ref = "sqlite-jdbc" }
+
+[bundles]
+
+[plugins]
+jvm = { id = "org.jetbrains.kotlin.jvm", version = "2.0.0" }
+javafx = { id = "org.openjfx.javafxplugin", version = "0.1.0" }
+javamodularity = { id = "org.javamodularity.moduleplugin", version = "1.8.12" }
