@@ -1,6 +1,6 @@
-# javafx-kotlin-starter
+# Maze Bank GUI Application
 
-Starter template for Kotlin projects with JavaFx.
+Imaginative Banking Application GUI for study JavaFx in Kotlin language
 
 Technical stack:
 
